@@ -13,6 +13,25 @@ public class Employee {
     private String lastname;
     private String email;
 
+    public String getContactNo() {
+        return ContactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        ContactNo = contactNo;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String address) {
+        Address = address;
+    }
+
+    private String ContactNo;
+    private String Address;
+
     public int getId() {
         return id;
     }
@@ -52,6 +71,8 @@ public class Employee {
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +
+                ", ContactNo='" + ContactNo + '\'' +
+                ", Address='" + Address + '\'' +
                 '}';
     }
 }

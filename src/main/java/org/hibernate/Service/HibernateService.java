@@ -14,6 +14,16 @@ public class HibernateService {
     public Employee GetEmployeeByID(int employeeid){
         return hibernateDao.GetEmployeeByID(employeeid);
     }
+    public void update(int empid,String firstname){
+        hibernateDao.update(empid,firstname);
+    }
+    public void update(int empid,Employee newemployee){
+        hibernateDao.update(empid,newemployee);
+    }
+    public void delete(int empid){
+        hibernateDao.delete(empid);
+    }
+
     }
 
 
